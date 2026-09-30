@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Simule avaliações quantitativas de agentes ocupacionais com a Peritus SST.">
+<title>Avaliações Quantitativas | Peritus SST</title>
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/css/styles.css">
+<script defer src="assets/js/shared.js"></script><script defer src="assets/js/avaliacoes.js"></script>
+</head><body class="theme-quant">
+<header class="site-header"><div class="shell header-row">
+<a class="brand" href="avaliacoes-quantitativas.html"><img src="assets/img/logo-peritus.svg" alt="Peritus SST"></a>
+<button class="nav-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+<nav class="main-nav" id="main-nav" data-main-nav>
+<a class="nav-link nav-link-active" href="avaliacoes-quantitativas.html">Avaliações quantitativas</a>
+<a class="nav-link " href="pericias-tecnicas.html">Perícias técnicas</a>
+<a class="nav-link " href="revisao-fap.html">Revisão do FAP</a>
+</nav></div></header>
+<main>
+<section class="quant-hero"><div class="shell">
+<span class="eyebrow">Avaliações quantitativas</span>
+<h1 class="hero-title">Meça a exposição antes de concluir sobre o risco.</h1>
+<p class="hero-copy">Simule pontos de avaliação, mobilização e investimento preliminar para agentes ocupacionais.</p>
+<ul class="benefit-list"><li><span class="check">✓</span>Pontos por área</li><li><span class="check">✓</span>Agentes diferentes</li><li><span class="check">✓</span>Estimativa instantânea</li></ul>
+<div class="hero-actions"><button class="btn btn-primary" type="button" data-scroll-calculator>Simular avaliação</button><a class="btn btn-secondary" href="#faq">Como funciona</a></div>
+</div></section>
+
+<section class="quant-workspace"><div class="shell quant-grid">
+<aside class="process-panel"><span class="mini-label">Leitura técnica</span><h2>Da hipótese à medição</h2><p>A calculadora ajuda a dimensionar uma campanha preliminar.</p>
+<ol class="timeline"><li><div><h3>Agente</h3><p>Selecione o tipo de exposição a avaliar.</p></div></li><li><div><h3>Área</h3><p>A área ajuda a estimar a quantidade de pontos.</p></div></li><li><div><h3>Validação</h3><p>O escopo final depende da estratégia técnica e das condições reais.</p></div></li></ol></aside>
+
+<section class="calculator-card" data-calculator><div class="calculator-head"><span class="calculator-kicker">Estimativa preliminar</span><h2>Simule a avaliação</h2></div>
+<div class="calculator-body"><form id="quant-form">
+<div class="form-grid">
+<div class="field field-full"><label for="quant-agent">Agente ocupacional</label><select id="quant-agent"><option value="fumos">Fumos metálicos</option><option value="ruido">Ruído contínuo — dosimetria</option><option value="calor">Calor ocupacional — IBUTG</option><option value="poeira">Poeiras / Sílica</option><option value="vibracao">Vibração</option></select></div>
+<div class="field"><label for="quant-area">Área estimada (m²)</label><input id="quant-area" type="number" min="1" value="50"></div>
+<div class="field"><label for="quant-workers">Trabalhadores expostos</label><input id="quant-workers" type="number" min="1" value="8"></div>
+<div class="field"><label for="quant-city">Cidade</label><input id="quant-city" value="Passo Fundo"></div>
+<div class="field"><label for="quant-state">Estado</label><select id="quant-state"></select></div>
+</div>
+<div class="choice-panel"><span class="mini-label">Por que medir?</span><p id="quant-explanation"></p></div>
+<div class="result-panel" id="quant-result"><div class="result-top"><div><span class="result-label">Investimento estimado</span><strong class="result-value" id="quant-total"></strong></div><span class="result-note">Estimativa sujeita à estratégia de amostragem e logística.</span></div>
+<div class="metric-grid"><div class="metric"><span>Pontos estimados</span><strong id="quant-points"></strong></div><div class="metric"><span>Valor por ponto</span><strong id="quant-unit"></strong></div><div class="metric"><span>Mobilização</span><strong id="quant-mobilization"></strong></div></div></div>
+<button class="btn btn-primary calculator-submit" type="submit">Validar pelo WhatsApp</button>
+</form></div></section>
+</div></section>
+
+<section class="section-block" id="faq"><div class="shell faq-wrap"><div class="faq-intro"><span class="eyebrow">Critério técnico</span><h2>A simulação não substitui o plano de amostragem.</h2><p>A definição final dos pontos depende do ambiente, grupos expostos e estratégia de avaliação.</p></div>
+<div class="accordion"><article class="accordion-item"><h3><button class="accordion-button" data-accordion-button aria-expanded="true" aria-controls="q1"><span>Por que a área influencia?</span><span>+</span></button></h3><div class="accordion-panel" id="q1">Nesta demonstração, a área é usada como uma heurística simples para estimar pontos e explicar o fluxo comercial.</div></article></div>
+</div></section>
+</main><footer class="footer"><div class="shell footer-row"><span class="footer-brand">Peritus SST — Portfolio Edition</span><small>Simulações informativas, sujeitas à validação técnica/comercial.</small></div></footer>
+<a class="whatsapp-float" href="https://wa.me/5554999999999?text=Ol%C3%A1%2C%20Peritus%20SST!" target="_blank" rel="noopener noreferrer" aria-label="Falar por WhatsApp"><svg viewBox="0 0 24 24"><path d="M20.5 11.7A8.5 8.5 0 0 1 8 19.2L3.5 20.5 4.8 16A8.5 8.5 0 1 1 20.5 11.7Z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8.4 7.7c.2-.4.4-.4.7-.4h.5c.2 0 .4 0 .5.4l.7 1.7c.1.3.1.5-.1.7l-.6.7c-.2.2-.1.4 0 .6.7 1.3 1.6 2.2 2.9 2.8.2.1.4.2.6 0l.8-1c.2-.2.4-.3.7-.2l1.7.8c.3.1.5.3.5.5 0 .5-.2 1.5-.8 2-.6.5-1.4.8-2.2.7-1-.1-2.3-.5-4.2-2.1-2.2-1.8-3.6-4.1-4-5.1-.4-1.1 0-1.8.3-2.1Z" fill="currentColor"/></svg></a></body></html>
