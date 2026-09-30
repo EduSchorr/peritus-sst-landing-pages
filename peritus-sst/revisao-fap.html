@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Simule o impacto financeiro do FAP com a Peritus SST.">
+<title>Revisão do FAP | Peritus SST</title>
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/css/styles.css">
+<script defer src="assets/js/shared.js"></script><script defer src="assets/js/fap.js"></script>
+</head><body class="theme-fap">
+<header class="site-header"><div class="shell header-row">
+<a class="brand" href="revisao-fap.html"><img src="assets/img/logo-peritus.svg" alt="Peritus SST"></a>
+<button class="nav-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+<nav class="main-nav" id="main-nav" data-main-nav>
+<a class="nav-link " href="avaliacoes-quantitativas.html">Avaliações quantitativas</a>
+<a class="nav-link " href="pericias-tecnicas.html">Perícias técnicas</a>
+<a class="nav-link nav-link-active" href="revisao-fap.html">Revisão do FAP</a>
+</nav></div></header>
+<main>
+<section class="fap-hero"><div class="shell">
+<span class="eyebrow">Revisão do FAP</span>
+<h1 class="hero-title">Visualize o impacto do fator antes de analisar os dados.</h1>
+<p class="hero-copy">Projete o efeito do FAP vigente em 13 e 26 folhas e use o resultado como ponto de partida para a análise técnica.</p>
+<ul class="benefit-list"><li><span class="check">✓</span>13 folhas</li><li><span class="check">✓</span>26 folhas</li><li><span class="check">✓</span>Referência com FAP 0,5000</li></ul>
+<div class="hero-actions"><button class="btn btn-primary" type="button" data-scroll-calculator>Simular impacto</button><a class="btn btn-secondary" href="#faq">Entender a comparação</a></div>
+</div></section>
+
+<section class="fap-dashboard" data-calculator><div class="shell dashboard-frame">
+<section class="calculator-card"><div class="calculator-head"><span class="calculator-kicker">Parâmetros</span><h2>Simule o impacto do FAP</h2></div>
+<div class="calculator-body"><form id="fap-form">
+<div class="form-grid">
+<div class="field field-full"><label for="fap-salary">Massa salarial mensal</label><input id="fap-salary" value="R$ 1.000.000,00"></div>
+<div class="field"><label for="fap-current">FAP atual</label><input id="fap-current" type="number" min=".5" max="2" step=".0001" value="2.0000"></div>
+<div class="field"><label for="fap-rat">RAT</label><select id="fap-rat"><option value="1">1%</option><option value="2">2%</option><option value="3" selected>3%</option></select></div>
+<div class="field"><label for="fap-city">Cidade</label><input id="fap-city" value="Passo Fundo"></div>
+<div class="field"><label for="fap-state">Estado</label><select id="fap-state"></select></div>
+</div>
+<div class="choice-panel"><span class="mini-label">Leitura</span><h3>Por que analisar?</h3><p>A calculadora dimensiona o impacto matemático; a viabilidade de revisão depende da conferência técnica dos dados.</p></div>
+<button class="btn btn-primary calculator-submit" type="submit">Solicitar análise pelo WhatsApp</button>
+</form></div></section>
+
+<section class="fap-analytics" id="fap-result"><div class="analytics-head"><div><span class="mini-label">Projeção</span><h2>Leitura financeira</h2></div><span class="analytics-badge">26 FOLHAS</span></div>
+<div class="fap-total"><span class="result-label">Impacto estimado em dois anos</span><strong class="result-value" id="fap-two-years"></strong></div>
+<div class="metric-grid"><div class="metric"><span>Por folha</span><strong id="fap-per-payroll"></strong></div><div class="metric"><span>13 folhas</span><strong id="fap-annual"></strong></div><div class="metric"><span>Referência 0,5000</span><strong id="fap-minimum"></strong></div><div class="metric"><span>Diferença matemática</span><strong id="fap-difference"></strong></div></div>
+<div class="fap-disclaimer"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 11v5M12 8h.01" fill="none" stroke="currentColor" stroke-width="2"/></svg><span>A comparação com 0,5000 não representa garantia de redução do índice.</span></div>
+</section>
+</div></section>
+
+<section class="section-block" id="faq"><div class="shell faq-wrap"><div class="faq-intro"><span class="eyebrow">Análise técnica</span><h2>Antes de contestar, compreenda os dados.</h2><p>A simulação dimensiona o cenário; a revisão depende dos elementos que formaram o índice.</p></div>
+<div class="accordion"><article class="accordion-item"><h3><button class="accordion-button" data-accordion-button aria-expanded="true" aria-controls="f1"><span>O que significa comparar com 0,5000?</span><span>+</span></button></h3><div class="accordion-panel" id="f1">É apenas uma referência matemática com o menor valor possível do fator, não uma promessa de redução.</div></article></div>
+</div></section>
+</main><footer class="footer"><div class="shell footer-row"><span class="footer-brand">Peritus SST — Portfolio Edition</span><small>Simulações informativas, sujeitas à validação técnica/comercial.</small></div></footer>
+<a class="whatsapp-float" href="https://wa.me/5554999999999?text=Ol%C3%A1%2C%20Peritus%20SST!" target="_blank" rel="noopener noreferrer" aria-label="Falar por WhatsApp"><svg viewBox="0 0 24 24"><path d="M20.5 11.7A8.5 8.5 0 0 1 8 19.2L3.5 20.5 4.8 16A8.5 8.5 0 1 1 20.5 11.7Z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8.4 7.7c.2-.4.4-.4.7-.4h.5c.2 0 .4 0 .5.4l.7 1.7c.1.3.1.5-.1.7l-.6.7c-.2.2-.1.4 0 .6.7 1.3 1.6 2.2 2.9 2.8.2.1.4.2.6 0l.8-1c.2-.2.4-.3.7-.2l1.7.8c.3.1.5.3.5.5 0 .5-.2 1.5-.8 2-.6.5-1.4.8-2.2.7-1-.1-2.3-.5-4.2-2.1-2.2-1.8-3.6-4.1-4-5.1-.4-1.1 0-1.8.3-2.1Z" fill="currentColor"/></svg></a></body></html>
