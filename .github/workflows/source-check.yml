@@ -1,0 +1,28 @@
+name: source-check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate JavaScript syntax
+        run: |
+          node --check peritus-sst/assets/js/shared.js
+          node --check peritus-sst/assets/js/pericias.js
+          node --check peritus-sst/assets/js/avaliacoes.js
+          node --check peritus-sst/assets/js/fap.js
+      - name: Verify landing-page assets
+        run: |
+          test -f peritus-sst/pericias-tecnicas.html
+          test -f peritus-sst/avaliacoes-quantitativas.html
+          test -f peritus-sst/revisao-fap.html
+          test -f peritus-sst/assets/css/styles.css
+          test -f peritus-sst/assets/img/logo-peritus.svg
